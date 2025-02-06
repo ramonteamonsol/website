@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Impact';
+  src: url('./../fonts/impact/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./../fonts/helvetica-neue/HelveticaNeueRoman.otf')
+    format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Condensed';
+  src: url('./../fonts/helvetica-neue/HelveticaNeue-Condensed.otf')
+    format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vandalism';
+  src: url('./../fonts/Vandalizm/Vandalism.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Impact', sans-serif;
+}
+.font-helvetica-neue {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.font-helvetica-neue-condensed {
+  font-family: 'Helvetica Neue Condensed', sans-serif;
+}
+.font-vandalism {
+  font-family: 'Vandalism', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+@keyframes typing {
+  0% {
+    content: 'Loading';
+  }
+  33% {
+    content: 'Loading .';
+  }
+  66% {
+    content: 'Loading . .';
+  }
+  100% {
+    content: 'Loading . . .';
+  }
+}
+
+.typing-animation {
+  position: relative;
+}
+
+.typing-animation:after {
+  content: 'Loading';
+  animation: typing 1.5s infinite steps(4);
+}
+
+.shake {
+  animation: shake 3s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2px);
+  }
+  20% {
+    transform: translateX(2px);
+  }
+  30% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  90% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.swing {
+  animation: swing 3s ease-in-out infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.jitter {
+  animation: jitter 2s ease-in-out infinite;
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.swing-right {
+  animation: swing-right 3s ease-in-out infinite;
+}
+@keyframes swing-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  87% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.swing-right2 {
+  animation: swing-right2 3s ease-in-out infinite;
+}
+@keyframes swing-right2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  87% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.vibrateXY {
+  animation: vibrateXY 0.3s ease-in-out infinite;
+}
+@keyframes vibrateXY {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.vibrate {
+  animation: vibrate 0.2s ease-in-out infinite;
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px);
+  }
+  15% {
+    transform: translate(2px);
+  }
+  60% {
+    transform: translate(-2px);
+  }
+  80% {
+    transform: translate(2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.slideanimation {
+  animation: slide 10s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(100%);
+  }
+  25% {
+    transform: translate(-100%);
+  }
+  50% {
+    transform: translate(100%);
+  }
+  75% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
