@@ -6,7 +6,7 @@ export const metadata = {
   description: "Benvenuto su Ramon, il sito ufficiale!",
   icons: "./favicon.webp",
   openGraph: {
-    title: "Ramon - Il tuo sito ufficiale",
+    title: "Ramon - He's not a hero. He's not a villain. He's f_cking Ramon",
     description: "Scopri tutto su Ramon! 🚀",
     url: "https://www.ramon.meme/",
     siteName: "Ramon",
