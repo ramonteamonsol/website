@@ -7,7 +7,7 @@ export const metadata = {
   icons: "./favicon.webp",
   openGraph: {
     title: "Ramon - He's not a hero. He's not a villain. He's f_cking Ramon",
-    description: "Scopri tutto su Ramon! 🚀",
+    description: "He's not a hero. He's not a villain. He's f_cking Ramon 🚀",
     url: "https://www.ramon.meme/",
     siteName: "Ramon",
     images: [
